@@ -1,0 +1,43 @@
+{
+  "name": "login-service-db",
+  "version": "1.0.0",
+  "description": "Database API for login-service",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test jest --verbose --runInBand",
+    "test:watch": "NODE_ENV=test jest --watch --runInBand",
+    "build": "npx tsc",
+    "dev": "NODE_ENV=dev ts-node-dev src/index.ts",
+    "lint": "eslint --ext .ts ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kosvi/login-service-db.git"
+  },
+  "author": "Ville Koskela",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kosvi/login-service-db/issues"
+  },
+  "homepage": "https://github.com/kosvi/login-service-db#readme",
+  "devDependencies": {
+    "@types/jest": "^29.1.1",
+    "@types/node": "^18.7.23",
+    "@types/pg": "^8.6.5",
+    "@types/supertest": "^2.0.12",
+    "@types/uuid": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "eslint": "^8.24.0",
+    "jest": "^29.1.2",
+    "supertest": "^6.2.4",
+    "ts-jest": "^29.0.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "pg": "^8.8.0",
+    "uuid": "^9.0.0",
+    "zod": "^3.19.1"
+  }
+}
